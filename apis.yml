@@ -1,8 +1,14 @@
 aid: daybreak
 name: Daybreak
-description: Daybreak is a company surfaced as a portfolio company of lightspeed-venture-partners, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Daybreak Health is a B2B mental health company that delivers teletherapy
+  and mental health programs for K-12 students (ages 5-19) in partnership with school
+  districts and health plans. Its services include one-on-one teletherapy, in-person
+  and hybrid onsite programs, universal mental health screeners, and mental health
+  classes, with programs tailored for BIPOC, LGBTQIA+, and low-income student populations.
+  Daybreak is a care-delivery organization sold to schools and payers rather than a
+  developer platform; as of this enrichment pass it publishes no public developer or
+  API surface. This APIs.json profile captures the company's public web properties
+  and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/daybreak/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +17,30 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/64bac3de8f242d758b850cba/64de0d9ac07ba4c4237977bd_og.png
 tags:
 - Company
+- Mental Health
+- Healthcare
+- Teletherapy
+- Behavioral Health
+- Education
+- K-12
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/daybreak-domain-security.yml
 - type: Website
   url: https://www.daybreakhealth.com
+- type: Blog
+  url: https://www.daybreakhealth.com/resources
+- type: Support
+  url: https://www.daybreakhealth.com/contact-us
+- type: TermsOfService
+  url: https://www.daybreakhealth.com/daybreak-terms-of-use
+- type: PrivacyPolicy
+  url: https://www.daybreakhealth.com/daybreak-privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
